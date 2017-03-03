@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 
 // components
 import { AppComponent }      from './app.component';
+import { LoginComponent }    from './components/login/login.component';
 
 // services
 import { AuthService }       from './services/auth.service';
@@ -18,7 +19,7 @@ import { firebaseConfig }    from './../environments/firebase.config';
   // modules
   imports: [ BrowserModule, FormsModule, HttpModule, AngularFireModule.initializeApp(firebaseConfig) ],
   // components
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, LoginComponent ],
   // services
   providers: [ AuthService ],
   // bootstrap
