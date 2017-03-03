@@ -8,6 +8,9 @@ import { AngularFireModule } from 'angularfire2';
 // components
 import { AppComponent }      from './app.component';
 
+// services
+import { AuthService }       from './services/auth.service';
+
 // firebase config
 import { firebaseConfig }    from './../environments/firebase.config';
 
@@ -17,7 +20,7 @@ import { firebaseConfig }    from './../environments/firebase.config';
   // components
   declarations: [ AppComponent ],
   // services
-  providers: [],
+  providers: [ AuthService ],
   // bootstrap
   bootstrap: [ AppComponent ]
 })
