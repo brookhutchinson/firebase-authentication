@@ -8,6 +8,7 @@ import { AngularFireModule }      from 'angularfire2';
 
 // components
 import { AppComponent }           from './app.component';
+import { NavbarComponent }        from './components/navbar/navbar.component';
 import { LoginComponent }         from './components/login/login.component';
 import { HomeComponent }          from './components/home/home.component';
 
@@ -17,12 +18,11 @@ import { AuthService }            from './services/auth.service';
 // firebase config
 import { firebaseConfig }         from './../environments/firebase.config';
 
-
 @NgModule({
   // modules
   imports: [ BrowserModule, FormsModule, HttpModule, ConfiguredRouterModule, AngularFireModule.initializeApp(firebaseConfig) ],
   // components
-  declarations: [ AppComponent, LoginComponent, HomeComponent ],
+  declarations: [ AppComponent, NavbarComponent, LoginComponent, HomeComponent ],
   // services
   providers: [ AuthService ],
   // bootstrap
